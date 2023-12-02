@@ -1,4 +1,4 @@
-# Decentralized-Storage-System
+# Decentralized Storage System
 This project aims to develop a decentralized storage system using C and C++, providing a basic framework for distributed data storage across multiple nodes. The system utilizes hashing principles for data distribution and retrieval.
 
 # Objective
@@ -32,7 +32,7 @@ Installation:
 
 To get started with this decentralized storage system, follow these steps
 
-- Clone the repository: git clone <repository-url>
+- Clone the repository: git clone [Decentralized Storage System](https://github.com/OmikroPersei/Decentralized-Storage-System)
 - Compile the code using your C/C++ compiler.
 - Run the executable with appropriate parameters.
 
@@ -48,4 +48,4 @@ We welcome contributions from the community! Please follow our Contribution Guid
 
 # License
 
-This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
+This project is licensed under the [Apache License 2.0](https://opensource.org/license/apache-2-0/) - see the [LICENSE](https://www.apache.org/licenses/LICENSE-2.0.txt) file for details.
