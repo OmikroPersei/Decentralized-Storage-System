@@ -1,6 +1,11 @@
 # Decentralized Storage System
 This project aims to develop a decentralized storage system using C and C++, providing a basic framework for distributed data storage across multiple nodes. The system utilizes hashing principles for data distribution and retrieval.
 
+# Implementation
+
+The project will be implemented using C and C++, allowing for flexibility and performance in building the decentralized storage system.
+
+
 # Objective
 
 The main objective of this project is to create a decentralized storage mechanism that ensures data availability and accessibility while distributing it across a network of nodes. By utilizing efficient hashing techniques, it aims to provide a scalable and reliable storage infrastructure.
@@ -12,11 +17,6 @@ The main objective of this project is to create a decentralized storage mechanis
 - Hashing Algorithms: Utilization of hashing principles for effective data distribution.
 - Framework for Scalability: A foundational framework that can be scaled for larger networks.
 - Basic Data Security: Initial measures for data security within the system.
-
-
-# Implementation
-
-The project will be implemented using C and C++, allowing for flexibility and performance in building the decentralized storage system.
 
 
 # Future Scope
