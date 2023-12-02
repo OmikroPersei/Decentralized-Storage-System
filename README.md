@@ -44,7 +44,7 @@ Usage:
 
 # Contributing
 
-We welcome contributions from the community! Please follow our Contribution [Guidelines](https://github.com/OmikroPersei/Decentralized-Storage-System/blob/main/CONTRIBUTING.md) to contribute to this project.
+We welcome contributions from the community! Please follow our [Contribution Guidelines](https://github.com/OmikroPersei/Decentralized-Storage-System/blob/main/CONTRIBUTING.md) to contribute to this project.
 
 # License
 
