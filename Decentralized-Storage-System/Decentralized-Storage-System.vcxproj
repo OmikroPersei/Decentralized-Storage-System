@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="WSADATA.h" />
+    <ClInclude Include="dsslib.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Client.c" />
