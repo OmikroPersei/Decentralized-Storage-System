@@ -1,8 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <pthread.h>
+#include <ws2tcpip.h>
+#include <iphlpapi.h>
 #include "dsslib.h"
 #include<windows.h>
+
+#pragma comment(lib, "IPHLPAPI.lib")
 
 //	WSADATA variable for init socket
 WSADATA* new_wsadata;
@@ -14,6 +19,11 @@ pthread_t receive_thread, send_thread;
 int reciev_sock, send_sock;
 
 
+struct sockaddr_in receive_addr; 
+
+struct sockaddr_in* send_addr;
+
+
 //	Function for receiving data
 void* receive_data(void* arg)
 {
@@ -22,6 +32,21 @@ void* receive_data(void* arg)
 	{
 		printf("DEBUG: socket creation failed\n");
 		return NULL;	//	Return NULL if socket creation fails
+	}
+
+	receive_addr.sin_family = AF_INET;
+	receive_addr.sin_port = htons(0);
+	inet_pton(AF_INET, INADDR_ANY, &receive_addr.sin_addr.S_un.S_addr);
+
+	if (bind(reciev_sock, (struct sockeaddr*)&receive_addr, sizeof(receive_addr)) < 0)
+	{
+		printf("DEBUG: bind creation failed\n");
+		return NULL;	//	Return NULL if socket creation fails
+	}
+
+	if (listen(reciev_sock, 1) < 0)
+	{
+		printf("DEBUG: listen creation failed");
 	}
 
 	printf("DEBUG: reciev thread start\n");
@@ -45,9 +70,6 @@ void* send_data(void* arg)
 	return NULL;	//	Return NULL to indicate successful execution
 }
 
-
-
-
 int main()
 {
 	//	This macro checks if WSAStartup completed without errors
@@ -60,10 +82,10 @@ int main()
 	PTHREAD_CREATE(send_thread, NULL, send_data, NULL);
 
 
-
 	while (1)
 	{
 		Sleep(1000);
+
 		printf("DEBUG: Continue\n");
 	}
 
