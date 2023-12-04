@@ -1,3 +1,3 @@
 ﻿  Client.c
-C:\Users\Novik\Documents\GitHub\Decentralized-Storage-System\Decentralized-Storage-System\Client.c(41,43): warning C4133: 'function': incompatible types - from 'sockeaddr *' to 'const sockaddr *'
+C:\Users\Novik\Documents\GitHub\Decentralized-Storage-System\Decentralized-Storage-System\Client.c(26,2): warning C4013: 'inet_pton' undefined; assuming extern returning int
   Decentralized-Storage-System.vcxproj -> C:\Users\Novik\Documents\GitHub\Decentralized-Storage-System\x64\Debug\Decentralized-Storage-System.exe
